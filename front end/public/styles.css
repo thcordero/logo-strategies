@@ -1,0 +1,177 @@
+html, body{
+    font-family: "PT Sans", "sans-serif";
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#root, #siteWrapper, #page{
+    height: 100%;
+}
+
+#siteWrapper{
+    padding-top: 76.38px ;
+}
+
+#page{
+    background-image: url("LogoStrategies.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #142238;
+}
+
+
+
+
+/* -----------------------header----------------------- */ 
+
+#header-section{
+    margin-top: -76.38px;
+   
+    
+}
+
+
+.navbar-all{
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 2.5%;
+    background-color: #F4C52E;
+}
+.navbar-all p{
+    margin: 0;
+}
+
+
+.logo-picture{
+    border-radius: 50%;
+    border: solid 3px white;
+    width: 140px;
+    height: 140px;
+}
+
+.navbar-links{
+    display: block;
+}
+
+
+.contact-item{
+    background-color: #142238;
+    /* color: #F4C52E; */
+    width: 120px;
+}
+
+.button-back{
+    display: none;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .navbar-links{
+
+        height: 100%;
+        width: 100%;
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 65.38px;
+        overflow-x: hidden; /* Disable horizontal scroll */
+        /* transition: 0.5s; */
+
+       
+    }
+    .navbar-links-content {
+        position: relative;
+        top: 10%;
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        
+      }
+
+      .contact-item{
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25%;                      
+
+    }
+
+    .projects-content{
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        position: fixed; /* Stay in place */
+        z-index: 2; /* Sit on top */
+        left: 0;
+        top: 120px;
+        overflow-x: hidden; /* Disable horizontal scroll */
+        /* transition: 0.5s; */
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .button-back{
+        display: initial;
+        background-color: #142238;
+        border: none;
+    }
+    
+  }
+
+
+
+/* ------------------------main------------------------ */ 
+
+#home-section{
+    height: 100%;
+}
+
+.intro-section{
+
+    text-align: center;
+    padding: 0 20%;
+
+}
+
+.row1, .row2{
+    height:50%;
+}
+
+.project1, .project2, .project3, .project4{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    background-color: none;
+    z-index: 1
+
+} 
+
+
+.project1:hover {
+    background-color: #8CD47E;
+    opacity: 0.8;
+  }
+.project2:hover {
+    background-color: #FF6961;
+    opacity: 0.8;
+  }
+.project3:hover {
+    background-color: #FFB54C;
+    opacity: 0.8;
+  }
+.project4:hover {
+    background-color: #82D1F1;
+    opacity: 0.8;
+  }
+
+
+
+
+
+/* -----------------------footer----------------------- */ 
+
+#footer-section{
+    background-color: white;
+}
