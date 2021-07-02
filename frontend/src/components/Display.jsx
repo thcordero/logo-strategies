@@ -19,24 +19,15 @@ const ProvideDisplay = ({ children }) => {
 
 const useProvideDisplay = () => {
 
-    const [home, setHome] = useState(true);
-    const [about, setAbout] = useState(true);
-    const [services, setServices] = useState(true);
-    const [contact, setContact] = useState(true);
+    const [page, setPage] = useState(true);
     const [footer, setFooter] = useState(true);
 
     
 
     return {
-        home,
-        about,
-        services,
-        contact,
+        page,
         footer,
-        setHome,
-        setAbout,
-        setServices,
-        setContact,
+        setPage,
         setFooter,
 
     };

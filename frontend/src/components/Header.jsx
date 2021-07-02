@@ -12,9 +12,9 @@ const Header = () => {
     const handleOverLayNavLinks = event => {
 
         setOverLayNavLinks(prevValue => !prevValue);
-        stateDisplay.setHome(prevValue => !prevValue);
+        stateDisplay.setPage(prevValue => !prevValue);
         stateDisplay.setFooter(prevValue => !prevValue);
-        console.log(stateDisplay.home);        
+        console.log(stateDisplay.page);        
 
     }
 

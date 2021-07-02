@@ -7,8 +7,7 @@ const Home = () => {
     const stateDisplay = useDisplay();
 
     return (
-        <div id="home-section"
-            style={{ display: stateDisplay.home ? "block" : "none" }}>
+        <div id="home-section">
 
             {/* <div className="intro-section">
 

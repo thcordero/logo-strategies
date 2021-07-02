@@ -7,8 +7,7 @@ const Contact = () => {
     const stateDisplay = useDisplay();
 
     return (
-        <div id="contact-section"
-            style={{ display: stateDisplay.contact ? "block" : "none" }}>
+        <div id="contact-section">
 
             <p>This is Contact</p>
 

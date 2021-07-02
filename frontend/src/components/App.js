@@ -13,18 +13,19 @@ import About from "./routes/About";
 import Contact from "./routes/Contact";
 import Project1 from "./routes/Project1";
 import Project2 from "./routes/Project2";
-import {ProvideDisplay} from "./Display";
+import { useDisplay } from "./Display";
 
 const App = () => {
 
+  const stateDisplay = useDisplay();
+
   return (
     
-    <ProvideDisplay>
       <div id="siteWrapper">
 
         <Header />
 
-        <main id="page">
+        <main id="page"  style={{ display: stateDisplay.page ? "block" : "none" }}>
 
           <Router>
 
@@ -58,9 +59,6 @@ const App = () => {
         <Footer />
 
       </div>
-
-    </ProvideDisplay>
-
   );
 }
 
