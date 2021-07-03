@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Sling as Hamburger } from 'hamburger-react';
-import {useDisplay} from "./Display";
+import { useDisplay } from "./Display";
 
 const Header = () => {
 
@@ -14,7 +14,7 @@ const Header = () => {
         setOverLayNavLinks(prevValue => !prevValue);
         stateDisplay.setPage(prevValue => !prevValue);
         stateDisplay.setFooter(prevValue => !prevValue);
-        console.log(stateDisplay.page);        
+        console.log(stateDisplay.page);
 
     }
 
@@ -24,7 +24,7 @@ const Header = () => {
 
 
                 <Navbar.Brand href="/">
-                    <p> logostrategies </p>
+                    <p> logostrategies.com </p>
                 </Navbar.Brand>
 
                 <Navbar.Toggle aria-controls="responsive-navbar-nav"
@@ -35,7 +35,10 @@ const Header = () => {
                 </Navbar.Toggle>
 
                 <div className="navbar-links"
-                    style={{ backgroundColor: overLayNavLinks ? "white" : "transparent" }}>
+                    style={{
+                        backgroundColor: overLayNavLinks ? "white" : "transparent",
+                        position: overLayNavLinks && "fixed"
+                    }}>
 
 
                     <Navbar.Collapse
@@ -54,7 +57,7 @@ const Header = () => {
 
                                     <NavDropdown.Item href="/project1">Project 1</NavDropdown.Item>
                                     <NavDropdown.Item href="/project2">Project 2</NavDropdown.Item>
-                                 
+
 
                                 </div>
 

@@ -18,7 +18,7 @@ const Home = () => {
 
             </div> */}
             <div className="row1">
-                <div className="project1">project1</div>
+                <div className="project1">Project 1</div>
                 <div className="project2">project2</div>
             </div>
             <div className="row2">
